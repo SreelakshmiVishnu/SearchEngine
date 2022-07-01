@@ -6,8 +6,10 @@ or you can add the package to your composer.json then composer install
 
   "require": {
         //...
-        "mossab/search-engine-crawler": "dev-main"
+        "sreelakshmi/search-engine-crawler": "dev-main"
     }
+    
+    
 Usage
 first of all you need to add your API key and CX to your .env file
 
@@ -18,6 +20,8 @@ require __DIR__.'/vendor/autoload.php';
 $myGenerator = new src\SearchEngine();
 $myGenerator->setEngine('google.com');
 $results =  $myGenerator->search(['flower','horizon']);
+
+
 you will get an ArrayIterator instance contains these parameters :
 
 - keyword being searched
@@ -28,6 +32,7 @@ you will get an ArrayIterator instance contains these parameters :
 - promoted This is a boolean value indicating whether the result is an ad or organic result
 you can loop results
 
+
 foreach ($results as $result){
     echo "title is : ".$result['title']."<br>".
         "ranking is = ".$result['ranking']."<br>".
@@ -35,5 +40,7 @@ foreach ($results as $result){
         "description is :".$result['description']."<br>".
         "keyword is :".$result['keyword']."<br>";
 }
+
+
 search Engines
 supported search engine is google.com or google.ae
