@@ -1,0 +1,22 @@
+{
+    "name": "sreelakshmi/search-engine-crawler",
+    "description": "php search engine crawler, collect 5 pages",
+    "type": "library",
+    "require": {
+        "php": "7.2",
+        "guzzlehttp/guzzle": "7.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sreelakshmi\\SearchEngineCrawler\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "SreelakshmiVishnu",
+            "email": "sreelakshmisc95@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
